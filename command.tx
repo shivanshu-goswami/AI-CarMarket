@@ -1,0 +1,282 @@
+# 🚗 AI Car Marketplace - Essential Commands Reference
+
+## 📦 Package Management Commands
+```bash
+# Install all dependencies
+npm install --legacy-peer-deps
+
+# Install a new package
+npm install <package-name>
+
+# Install dev dependency
+npm install -D <package-name>
+
+# Update all packages
+npm update
+
+# Check for outdated packages
+npm outdated
+
+# Security audit
+npm audit
+npm audit fix
+```
+
+## 🔧 Development Commands
+```bash
+# Start development server (http://localhost:3000)
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linting
+npm run lint
+
+# Fix linting issues
+npm run lint --fix
+```
+
+## 🗄️ Database Commands (Prisma)
+```bash
+# Generate Prisma Client (run after schema changes)
+npx prisma generate
+
+# Push schema changes to database (development)
+npx prisma db push
+
+# Create and apply migrations (production)
+npx prisma migrate dev --name <migration-name>
+npx prisma migrate deploy
+
+# Reset database (⚠️ Deletes all data)
+npx prisma migrate reset
+
+# Open Prisma Studio (Database GUI)
+npx prisma studio
+
+# View database schema
+npx prisma db pull
+
+# Format schema file
+npx prisma format
+
+# Validate schema
+npx prisma validate
+```
+
+## 🌱 Database Seeding Commands
+```bash
+# Run seed script (if created)
+npm run db:seed
+
+# Manual seeding with Prisma
+npx prisma db seed
+```
+
+## 🔐 Environment Setup Commands
+```bash
+# Create environment file
+touch .env.local
+
+# Required Environment Variables:
+# DATABASE_URL="postgresql://username:password@localhost:5432/ai_car_marketplace"
+# DIRECT_URL="postgresql://username:password@localhost:5432/ai_car_marketplace"
+# NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=""
+# CLERK_SECRET_KEY=""
+# NEXT_PUBLIC_SUPABASE_URL=""
+# NEXT_PUBLIC_SUPABASE_ANON_KEY=""
+# GOOGLE_AI_API_KEY=""
+```
+
+## 🚀 Deployment Commands
+```bash
+# Build and test locally
+npm run build
+npm start
+
+# Deploy to Vercel
+npx vercel
+npx vercel --prod
+
+# Deploy to Netlify
+npm run build
+# Then upload dist folder
+
+# Docker commands (if using Docker)
+docker build -t ai-car-marketplace .
+docker run -p 3000:3000 ai-car-marketplace
+```
+
+## 🧪 Testing Commands
+```bash
+# Install testing dependencies
+npm install -D jest @testing-library/react @testing-library/jest-dom
+
+# Run tests
+npm test
+npm run test:watch
+npm run test:coverage
+```
+
+## 🎨 UI/Styling Commands
+```bash
+# Tailwind CSS commands
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+# Add shadcn/ui components
+npx shadcn@latest add <component-name>
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add dialog
+```
+
+## 📊 Analytics & Monitoring Commands
+```bash
+# Bundle analyzer
+npm install -D @next/bundle-analyzer
+npm run analyze
+
+# Performance monitoring
+npm install -D lighthouse
+npx lighthouse http://localhost:3000
+```
+
+## 🔍 Debugging Commands
+```bash
+# Check Node.js version
+node --version
+
+# Check npm version
+npm --version
+
+# Clear npm cache
+npm cache clean --force
+
+# Clear Next.js cache
+rm -rf .next
+
+# Check package vulnerabilities
+npm audit
+
+# View dependency tree
+npm list
+npm list --depth=0
+```
+
+## 🌐 Git Commands (Project Specific)
+```bash
+# Initialize git repository
+git init
+
+# Add all files
+git add .
+
+# Commit changes
+git commit -m "feat: initial setup with database"
+
+# Push to remote
+git remote add origin <repository-url>
+git push -u origin main
+
+# Create feature branch
+git checkout -b feature/car-listing
+git checkout -b feature/user-auth
+git checkout -b feature/test-drive-booking
+```
+
+## 🔄 Useful PowerShell Commands (Windows)
+```powershell
+# Navigate to project directory
+cd "c:\Users\asus\Desktop\Temp\Working\Saurabh\ai-car-marketplace"
+
+# List files and folders
+Get-ChildItem
+ls
+
+# Check running processes on port 3000
+netstat -ano | findstr :3000
+
+# Kill process on port
+taskkill /PID <process-id> /F
+
+# Environment variable commands
+$env:NODE_ENV="development"
+Get-ChildItem Env:
+```
+
+## 🎯 Project-Specific Workflows
+```bash
+# Complete setup from scratch
+npm install --legacy-peer-deps
+npx prisma generate
+npx prisma db push
+npm run dev
+
+# After making schema changes
+npx prisma generate
+npx prisma db push
+
+# Before deploying
+npm run lint
+npm run build
+npx prisma migrate deploy
+
+# Database backup (if using PostgreSQL locally)
+pg_dump ai_car_marketplace > backup.sql
+psql ai_car_marketplace < backup.sql
+```
+
+## 🔧 Troubleshooting Commands
+```bash
+# Fix dependency issues
+rm -rf node_modules package-lock.json
+npm install --legacy-peer-deps
+
+# Fix Prisma client issues
+npx prisma generate
+npx prisma db push
+
+# Clear all caches
+npm cache clean --force
+rm -rf .next
+rm -rf node_modules
+npm install --legacy-peer-deps
+
+# Check for port conflicts
+netstat -tulpn | grep :3000
+
+# Environment variable debugging
+echo $DATABASE_URL  # Linux/Mac
+$env:DATABASE_URL   # PowerShell
+```
+
+## 📝 Quick Development Notes
+- Default dev server: `http://localhost:3000`
+- Prisma Studio: `http://localhost:5555`
+- Database: Supabase PostgreSQL
+- UI Framework: Tailwind CSS + shadcn/ui
+- Authentication: Clerk
+- ORM: Prisma
+- Deployment: Vercel (recommended)
+
+## ⚡ Most Used Commands (Daily Development)
+```bash
+# Start working
+npm run dev
+
+# After schema changes
+npx prisma generate && npx prisma db push
+
+# View database
+npx prisma studio
+
+# Add new dependency
+npm install <package-name> --legacy-peer-deps
+
+# Commit changes
+git add . && git commit -m "your message" && git push
+```
