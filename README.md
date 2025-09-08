@@ -1,6 +1,6 @@
 <br/>
 <div align="center">
-<a href="https://github.com/your-username/ai-car-marketplace">
+<a href="https://github.com/shivanshu-goswami/AI-CarMarket">
 <img src="public/logo-white.svg" alt="AutoAI Market Logo" width="200" height="60">
 </a>
 <h3 align="center">AutoAI Market</h3>
@@ -11,9 +11,7 @@ AI-Powered Car Marketplace with Smart Search and Test Drive Booking
 <a href="#about-the-project"><strong>Explore the docs »</strong></a>
 <br/>
 <br/>
-<a href="https://your-demo-url.vercel.app">View Demo</a>  
-<a href="https://github.com/your-username/ai-car-marketplace/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-<a href="https://github.com/your-username/ai-car-marketplace/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+<a href="https://ai-car-market-place.netlify.app/">View Demo</a>
 </p>
 </div>
 
@@ -66,7 +64,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/your-username/ai-car-marketplace.git
+   git clone https://github.com/shivanshu-goswami/AI-CarMarket.git
    cd ai-car-marketplace
    ```
 
@@ -213,7 +211,6 @@ ai-car-marketplace/
   - [ ] Insurance integration
   - [ ] Vehicle history reports
 
-See our [project board](https://github.com/your-username/ai-car-marketplace/projects/1) for detailed progress tracking.
 
 ## Contributing
 
@@ -256,11 +253,10 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for more information
 
 ## Contact
 
-**Project Maintainer**: Saurabh - [@your-twitter](https://twitter.com/your-username) - your-email@example.com
 
-**Project Link**: [https://github.com/your-username/ai-car-marketplace](https://github.com/your-username/ai-car-marketplace)
+**Project Link**: [https://github.com/shivanshu-goswami/AI-CarMarket](https://github.com/shivanshu-goswami/AI-CarMarket)
 
-**Live Demo**: [https://your-demo-url.vercel.app](https://your-demo-url.vercel.app)
+ **Live Demo**: [https://ai-car-market-place.netlify.app/](https://ai-car-market-place.netlify.app/)
 
 ## Acknowledgments
 
@@ -280,7 +276,6 @@ Special thanks to the following resources and libraries that made this project p
 ---
 
 <div align="center">
-  <p>Made with ❤️ by the AutoAI Market team</p>
   <p>
     <a href="#about-the-project">Back to top ↑</a>
   </p>
